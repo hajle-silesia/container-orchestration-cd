@@ -23,8 +23,7 @@ serviceAccount:
   # If not set and create is true, a name is generated using the fullname template
   name: ""
 
-podAnnotations:
-  reloader.stakater.com/auto: "true"
+podAnnotations: {}
 
 podSecurityContext: {}
   # fsGroup: 2000
