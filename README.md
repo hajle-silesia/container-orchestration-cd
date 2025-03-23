@@ -8,6 +8,13 @@ Repository for container orchestration CD.
 
 [Argo CD](https://argo-cd.readthedocs.io/en/stable/) is used as a tool for container orchestration CD.
 
+### Config upgrade
+
+[Reloader](https://github.com/stakater/Reloader) is used as a tool for configs upgrade in related workloads.
+See configuration details [here](https://github.com/stakater/Reloader?tab=readme-ov-file#how-to-use-reloader).
+
+Testing now: https://helm.sh/docs/howto/charts_tips_and_tricks/#automatically-roll-deployments as Reloader is not reliable.
+
 ### Config replication
 
 [Reflector](https://github.com/emberstack/kubernetes-reflector) is used as a tool for configs (ConfigMaps, Secrets, Certificates, etc.) replication across namespaces. For security and transparency, it's recommended to avoid automatically enabled replication. Instead, replication should be a mutual agreement of:
