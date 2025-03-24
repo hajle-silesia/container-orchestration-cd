@@ -15,6 +15,9 @@ spec:
   template:
     metadata:
       name: '{{index .path.segments 1}}'
+      annotations:
+        argocd-image-updater.argoproj.io/image-list:
+          - "hajlesilesia/{{index .path.segments 1}}"
     spec:
       project: default
       source:
