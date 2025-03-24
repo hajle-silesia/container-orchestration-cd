@@ -1,0 +1,4 @@
+reloader:
+  reloader:
+    reloadOnCreate: true
+    reloadOnDelete: true
