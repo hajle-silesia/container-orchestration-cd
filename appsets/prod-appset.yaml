@@ -17,6 +17,7 @@ spec:
       name: '{{index .path.segments 1}}'
       annotations:
         argocd-image-updater.argoproj.io/image-list: "hajlesilesia/{{index .path.segments 1}}"
+        argocd-image-updater.argoproj.io/write-back-method: argocd
     spec:
       project: default
       source:
