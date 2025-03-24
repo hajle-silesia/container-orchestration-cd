@@ -2,7 +2,7 @@ replicaCount: 1
 image:
   repository: hajlesilesia/file-content-query
   pullPolicy: IfNotPresent
-  tag: latest
+  tag: 1.x.x
 imagePullSecrets: []
 nameOverride: ''
 fullnameOverride: ''
