@@ -4,12 +4,12 @@ image:
   pullPolicy: IfNotPresent
   tag: 1.1.7
 imagePullSecrets: []
-nameOverride: ''
-fullnameOverride: ''
+nameOverride: ""
+fullnameOverride: ""
 serviceAccount:
   create: true
   annotations: {}
-  name: ''
+  name: ""
 podAnnotations: {}
 podSecurityContext: {}
 securityContext: {}
@@ -18,12 +18,12 @@ service:
   port: 80
 ingress:
   enabled: true
-  className: ''
+  className: ""
   annotations: {}
   hosts:
-    - paths:
-        - path: /api
-          pathType: ImplementationSpecific
+  - paths:
+    - path: /api
+      pathType: ImplementationSpecific
   tls: []
 resources: {}
 autoscaling:
@@ -34,3 +34,7 @@ autoscaling:
 nodeSelector: {}
 tolerations: []
 affinity: {}
+app:
+  image:
+    tag: 1.2.0
+    repository: hajlesilesia/file-content-query
