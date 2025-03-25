@@ -17,11 +17,13 @@ spec:
       name: '{{index .path.segments 1}}'
       annotations:
         argocd-image-updater.argoproj.io/image-list: "hajlesilesia/{{index .path.segments 1}}"
+        argocd-image-updater.argoproj.io/write-back-method: git:secret:image-updater/image-updater
+        argocd-image-updater.argoproj.io/write-back-target: helmvalues
     spec:
       project: default
       source:
         repoURL: https://github.com/hajle-silesia/container-orchestration-cd.git
-        targetRevision: HEAD
+        targetRevision: master
         path: '{{.path.path}}'
       destination:
         server: https://kubernetes.default.svc
