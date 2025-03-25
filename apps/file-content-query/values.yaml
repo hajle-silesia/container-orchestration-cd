@@ -34,7 +34,3 @@ autoscaling:
 nodeSelector: {}
 tolerations: []
 affinity: {}
-app:
-  image:
-    tag: 1.2.0
-    repository: hajlesilesia/file-content-query
