@@ -21,6 +21,7 @@ spec:
         argocd-image-updater.argoproj.io/write-back-target: helmvalues
         argocd-image-updater.argoproj.io/git-repository: git@github.com:hajle-silesia/container-orchestration-cd.git
         argocd-image-updater.argoproj.io/app.helm.image-name: app.image.repository
+        argocd-image-updater.argoproj.io/app.helm.image-tag: app.image.tag
     spec:
       project: default
       source:
