@@ -19,6 +19,7 @@ spec:
         argocd-image-updater.argoproj.io/image-list: "hajlesilesia/{{index .path.segments 1}}"
         argocd-image-updater.argoproj.io/write-back-method: git:secret:image-updater/image-updater
         argocd-image-updater.argoproj.io/write-back-target: helmvalues
+        argocd-image-updater.argoproj.io/git-repository: git@github.com:hajle-silesia/container-orchestration-cd.git
     spec:
       project: default
       source:
