@@ -22,7 +22,7 @@ spec:
     spec:
       project: default
       source:
-        repoURL: git@github.com:hajle-silesia/container-orchestration-cd.git
+        repoURL: https://github.com/hajle-silesia/container-orchestration-cd.git
         targetRevision: master
         path: '{{.path.path}}'
       destination:
