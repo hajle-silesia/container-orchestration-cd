@@ -16,10 +16,11 @@ spec:
     metadata:
       name: '{{index .path.segments 1}}'
       annotations:
-        argocd-image-updater.argoproj.io/image-list: "hajlesilesia/{{index .path.segments 1}}"
+        argocd-image-updater.argoproj.io/image-list: "app=hajlesilesia/{{index .path.segments 1}}"
         argocd-image-updater.argoproj.io/write-back-method: git:secret:image-updater/image-updater
         argocd-image-updater.argoproj.io/write-back-target: helmvalues
         argocd-image-updater.argoproj.io/git-repository: git@github.com:hajle-silesia/container-orchestration-cd.git
+        argocd-image-updater.argoproj.io/app.helm.image-name: app.image.repository
     spec:
       project: default
       source:
