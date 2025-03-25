@@ -17,3 +17,5 @@ mongodb:
   commonAnnotations:
     reflector.v1.k8s.emberstack.com/reflection-allowed: "true"
     reflector.v1.k8s.emberstack.com/reflection-allowed-namespaces: "file-content-ui,file-content-query"
+  annotations:
+    reloader.stakater.com/auto: "true"
