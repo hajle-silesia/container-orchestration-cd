@@ -9,7 +9,7 @@ on:
 jobs:
   chart-package:
     name: Chart package
-    uses: hajle-silesia/.github/.github/workflows/shared-chart-package.yaml@v2.3.3
+    uses: hajle-silesia/.github/.github/workflows/shared-chart-package.yaml@v2.6.2
     with:
       docker-hub-username: ${{ vars.DOCKER_HUB_USERNAME }}
       docker-hub-namespace: ${{ vars.DOCKER_HUB_NAMESPACE }}
