@@ -1,0 +1,6 @@
+dependencies:
+- name: oryx
+  repository: http://helm.ossrs.io/stable
+  version: 1.0.7
+digest: sha256:94406f2addb342bb63e51e7039bb8781016a46964c0a20b78d4646b89f87037a
+generated: "2025-03-27T18:19:08.716016975Z"
