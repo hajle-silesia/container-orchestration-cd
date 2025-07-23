@@ -25,5 +25,5 @@ appVersion: "1.16.0"
 
 dependencies:
   - name: mongodb
-    version: 16.5.32
+    version: 16.5.33
     repository: "oci://registry-1.docker.io/bitnamicharts"
