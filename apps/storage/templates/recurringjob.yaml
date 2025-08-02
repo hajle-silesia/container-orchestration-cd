@@ -3,7 +3,7 @@ kind: RecurringJob
 metadata:
   name: storage-backup
 spec:
-  cron: "0/5 * * * *"
+  cron: "0 0 * * *"
   task: "backup"
   groups:
     - default
