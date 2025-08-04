@@ -15,7 +15,7 @@ permissions:
 jobs:
   tests-and-static-analysis:
     name: Tests and static analysis
-    uses: hajle-silesia/.github/.github/workflows/shared-tests-and-static-analysis.yaml@v2.6.2
+    uses: hajle-silesia/.github/.github/workflows/shared-tests-and-static-analysis.yaml@v2.6.3
 
 #  chart-package:
 #    name: Chart package
