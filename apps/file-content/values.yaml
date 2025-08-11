@@ -13,7 +13,7 @@ mongodb:
     - name: MONGO_INITDB_ROOT_USERNAME
       value: $(MONGODB_ROOT_USER)
     - name: MONGO_INITDB_ROOT_PASSWORD
-      value: $(MONGODB_ROOT_PASSWORD)
+      value: $(cat MONGODB_ROOT_PASSWORD_FILE)
   commonAnnotations:
     reflector.v1.k8s.emberstack.com/reflection-allowed: "true"
     reflector.v1.k8s.emberstack.com/reflection-allowed-namespaces: "file-content-ui,file-content-query"
