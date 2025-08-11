@@ -14,6 +14,7 @@ mongodb:
       value: $(MONGODB_ROOT_USER)
     - name: MONGO_INITDB_ROOT_PASSWORD
       value: $(MONGODB_ROOT_PASSWORD)
+  usePasswordFiles: false
   commonAnnotations:
     reflector.v1.k8s.emberstack.com/reflection-allowed: "true"
     reflector.v1.k8s.emberstack.com/reflection-allowed-namespaces: "file-content-ui,file-content-query"
