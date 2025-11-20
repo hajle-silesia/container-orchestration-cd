@@ -1,7 +1,7 @@
 mongodb:
   image:
     repository: mongo
-    tag: 8.2.1
+    tag: 8.2.2
   persistence:
     mountPath: /data/db
     size: 1Gi
