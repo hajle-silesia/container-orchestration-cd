@@ -3,7 +3,7 @@ kind: EMQX
 metadata:
   name: emqx
 spec:
-  image: emqx/emqx:5.10.2
+  image: emqx/emqx:5.10.3
   # Sources (TLS listener config):
   # https://docs.emqx.com/en/emqx-operator/latest/tasks/configure-emqx-tls.html#apps.emqx.io/v2beta1
   # https://docs.emqx.com/en/emqx/latest/configuration/listener.html
